@@ -1,25 +1,23 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import { createRouter, createWebHistory } from 'vue-router';  // Import the new API from vue-router
+import HomeView from '../views/HomeView.vue';
+import CexOne from '../views/CexOne.vue';
+import CexTwo from '../views/CexTwo.vue';
+import CexThree from '../views/CexThree.vue';
+import CexFour from '../views/CexFour.vue';
+import WalletApp from '../views/WalletApp.vue';
 
 const routes = [
-  {
-    path: '/',
-    name: 'home',
-    component: HomeView
-  },
-  {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-  }
-]
+  { path: '/', name: 'HomeView', component: HomeView },
+  { path: '/cex1', name: 'CexOne', component: CexOne },
+  { path: '/cex2', name: 'CexTwo', component: CexTwo },
+  { path: '/cex3', name: 'CexThree', component: CexThree },
+  { path: '/cex4', name: 'CexFour', component: CexFour },
+  { path: '/wallet', name: 'WalletApp', component: WalletApp },
+];
 
 const router = createRouter({
-  history: createWebHashHistory(),
-  routes
-})
+  history: createWebHistory(),  // Use the appropriate history mode
+  routes,
+});
 
-export default router
+export default router;
