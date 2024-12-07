@@ -20,11 +20,11 @@ const router = createRouter({
   history: createWebHistory(),  // Use the appropriate history mode
   routes: [
     { path: '/', name: 'HomeView', component: HomeView },
-    { path: '/cex1', name: 'CexOne', component: CexOne },
-    { path: '/cex2', name: 'CexTwo', component: CexTwo },
-    { path: '/cex3', name: 'CexThree', component: CexThree },
-    { path: '/cex4', name: 'CexFour', component: CexFour },
-    { path: '/wallet', name: 'WalletApp', component: WalletApp },
+    { path: '/cex1', component: () => import('../views/CexOne.vue') },
+    { path: '/cex2', component: () => import('../views/CexTwo.vue') },
+    { path: '/cex3', component: () => import('../views/CexThree.vue') },
+    { path: '/cex4', component: () => import('../views/CexFour.vue') },
+    { path: '/wallet', component: () => import('../views/WalletApp.vue') },
   ],
 });
 
