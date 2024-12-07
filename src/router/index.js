@@ -1,10 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router';  // Import the new API from vue-router
 import HomeView from '../views/HomeView.vue';
-import CexOne from '../views/CexOne.vue';
-import CexTwo from '../views/CexTwo.vue';
-import CexThree from '../views/CexThree.vue';
-import CexFour from '../views/CexFour.vue';
-import WalletApp from '../views/WalletApp.vue';
+// import CexOne from '../views/CexOne.vue';
+// import CexTwo from '../views/CexTwo.vue';
+// import CexThree from '../views/CexThree.vue';
+// import CexFour from '../views/CexFour.vue';
+// import WalletApp from '../views/WalletApp.vue';
 
 
 // const routes = [
