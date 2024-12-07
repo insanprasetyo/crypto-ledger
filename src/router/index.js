@@ -6,18 +6,26 @@ import CexThree from '../views/CexThree.vue';
 import CexFour from '../views/CexFour.vue';
 import WalletApp from '../views/WalletApp.vue';
 
-const routes = [
-  { path: '/', name: 'HomeView', component: HomeView },
-  { path: '/cex1', name: 'CexOne', component: CexOne },
-  { path: '/cex2', name: 'CexTwo', component: CexTwo },
-  { path: '/cex3', name: 'CexThree', component: CexThree },
-  { path: '/cex4', name: 'CexFour', component: CexFour },
-  { path: '/wallet', name: 'WalletApp', component: WalletApp },
-];
+
+// const routes = [
+//   { path: '/', name: 'HomeView', component: HomeView },
+//   { path: '/cex1', name: 'CexOne', component: CexOne },
+//   { path: '/cex2', name: 'CexTwo', component: CexTwo },
+//   { path: '/cex3', name: 'CexThree', component: CexThree },
+//   { path: '/cex4', name: 'CexFour', component: CexFour },
+//   { path: '/wallet', name: 'WalletApp', component: WalletApp },
+// ];
 
 const router = createRouter({
   history: createWebHistory(),  // Use the appropriate history mode
-  routes,
+  routes: [
+    { path: '/', name: 'HomeView', component: HomeView },
+    { path: '/cex1', name: 'CexOne', component: CexOne },
+    { path: '/cex2', name: 'CexTwo', component: CexTwo },
+    { path: '/cex3', name: 'CexThree', component: CexThree },
+    { path: '/cex4', name: 'CexFour', component: CexFour },
+    { path: '/wallet', name: 'WalletApp', component: WalletApp },
+  ],
 });
 
 export default router;
