@@ -4,11 +4,14 @@
   <meta charset="utf-8">
   <title>Redirecting...</title>
   <script>
-    // Redirect to the correct route
     (function () {
-      var pathname = window.location.pathname;
-      var newPath = '/crypto-ledger' + pathname;
-      window.location.replace(newPath);
+      var currentPath = window.location.pathname;
+
+      // Ensure we only redirect if the path does not already start with "/crypto-ledger/"
+      if (!currentPath.startsWith('/crypto-ledger/')) {
+        var newPath = '/crypto-ledger' + currentPath;
+        window.location.replace(newPath);
+      }
     })();
   </script>
 </head>
