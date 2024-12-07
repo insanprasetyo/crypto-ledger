@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkcrypto_ledger"]=self["webpackChunkcrypto_ledger"]||[]).push([[422],{3422:function(n,e,r){r.r(e),r.d(e,{default:function(){return p}});var t=r(641);const o={class:"container"};function c(n,e,r,c,u,l){return(0,t.uX)(),(0,t.CE)("div",o,e[0]||(e[0]=[(0,t.Lk)("h5",null,"Tokocrypto Ledger",-1),(0,t.Lk)("p",null,"Spot only pairing IDR",-1)]))}var u={name:"CexTwo"},l=r(6262);const a=(0,l.A)(u,[["render",c]]);var p=a}}]);
+//# sourceMappingURL=422.8b9a3bd1.js.map
