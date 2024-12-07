@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';  // Import the new API from vue-router
-import HomeView from '../views/HomeView.vue';
+// import HomeView from '../views/HomeView.vue';
 // import CexOne from '../views/CexOne.vue';
 // import CexTwo from '../views/CexTwo.vue';
 // import CexThree from '../views/CexThree.vue';
@@ -19,7 +19,7 @@ import HomeView from '../views/HomeView.vue';
 const router = createRouter({
   history: createWebHistory(),  // Use the appropriate history mode
   routes: [
-    { path: '/', name: 'HomeView', component: HomeView },
+    { path: '/', component: () => import('../views/HomeView.vue') },
     { path: '/cex1', component: () => import('../views/CexOne.vue') },
     { path: '/cex2', component: () => import('../views/CexTwo.vue') },
     { path: '/cex3', component: () => import('../views/CexThree.vue') },
