@@ -9,7 +9,8 @@
 
       // Ensure we only redirect if the path does not already start with "/crypto-ledger/"
       if (!currentPath.startsWith('/crypto-ledger/')) {
-        var newPath = '/crypto-ledger' + currentPath;
+      //  var newPath = '/crypto-ledger' + currentPath;
+        var newPath = '/' + currentPath;
         window.location.replace(newPath);
       }
     })();

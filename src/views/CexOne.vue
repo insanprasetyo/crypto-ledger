@@ -186,9 +186,10 @@ export default {
       const sellPrice = row.sell_price || 0;
 
       const buyFee = Math.ceil(buyVolume * buyPrice * buyFeeRate);
-      const buyAmount = Math.ceil(buyVolume * buyPrice + buyFee);
+    //  const buyAmount = Math.ceil(buyVolume * buyPrice + buyFee);
+      const buyAmount = Math.ceil(buyVolume * buyPrice);
       const sellFee = Math.ceil(sellVolume * sellPrice * sellFeeRate);
-      const sellAmount = Math.ceil(sellVolume * sellPrice + sellFee);
+      const sellAmount = Math.ceil(sellVolume * sellPrice - sellFee);
       const marginIdr = sellAmount - buyAmount;
 
       const marginPercent = buyAmount > 0 ? (marginIdr / buyAmount) * 100 : 0;
