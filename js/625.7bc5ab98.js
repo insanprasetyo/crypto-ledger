@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkcrypto_ledger"]=self["webpackChunkcrypto_ledger"]||[]).push([[625],{9625:function(n,e,a){a.r(e),a.d(e,{default:function(){return i}});var l=a(641);const r={class:"container"};function t(n,e,a,t,u,s){return(0,l.uX)(),(0,l.CE)("div",r,e[0]||(e[0]=[(0,l.Lk)("h5",null,"Aplikasi Wallet",-1),(0,l.Lk)("p",null,"Koneksikan semua Crypto Wallet anda disini",-1)]))}var u={name:"WalletApp"},s=a(6262);const c=(0,s.A)(u,[["render",t]]);var i=c}}]);
+//# sourceMappingURL=625.7bc5ab98.js.map

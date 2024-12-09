@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting...</title>
+  <script>
+    (function () {
+      var currentPath = window.location.pathname;
+
+      // Ensure we only redirect if the path does not already start with "/crypto-ledger/"
+      if (!currentPath.startsWith('/crypto-ledger/')) {
+      //  var newPath = '/crypto-ledger' + currentPath;
+        var newPath = '/' + currentPath;
+        window.location.replace(newPath);
+      }
+    })();
+  </script>
+</head>
+<body>
+  <h1>Redirecting...</h1>
+</body>
+</html>

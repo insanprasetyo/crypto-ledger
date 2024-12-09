@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkcrypto_ledger"]=self["webpackChunkcrypto_ledger"]||[]).push([[942],{9942:function(e,n,r){r.r(n),r.d(n,{default:function(){return i}});var t=r(641);const c={class:"container"};function u(e,n,r,u,a,l){return(0,t.uX)(),(0,t.CE)("div",c,n[0]||(n[0]=[(0,t.Lk)("h5",null,"Binance Ledger",-1),(0,t.Lk)("p",null,"Spot only pairing USD",-1)]))}var a={name:"CexThree"},l=r(6262);const o=(0,l.A)(a,[["render",u]]);var i=o}}]);
+//# sourceMappingURL=942.b30092b8.js.map
